@@ -1,3 +1,26 @@
+工作流程
+# ===== 第一次在新專案資料夾初始化並推到 GitHub =====
+git init
+git add .
+git commit -m "init commit"
+git branch -M main
+git remote add origin https://github.com/你的帳號/專案名稱.git
+git push -u origin main
+
+# ===== 之後在同一台電腦更新推送 =====
+git add .
+git commit -m "update"
+git push
+
+# ===== 換到其他電腦繼續開發 =====
+git clone https://github.com/你的帳號/專案名稱.git
+cd 專案名稱
+git add .
+git commit -m "update"
+git push origin main
+
+
+
 # Git 指令大全
 
 這份文件整理了常用的 Git 指令及簡單說明，方便快速查閱。
