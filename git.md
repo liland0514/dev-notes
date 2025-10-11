@@ -22,6 +22,22 @@ git commit -m "update"
 git push origin main
 
 
+# ===== 建立與切換分支 =====
+git branch new-feature          # 建立分支 (但還在原本分支)
+git checkout new-feature        # 切換到新分支
+# 另一種寫法 (建立 + 切換一次完成)
+git checkout -b new-feature
+
+# ===== 推送分支到 GitHub =====
+git push -u origin new-feature  # 第一次推送分支 (後續只要 git push)
+
+# ===== 切回主分支 (main) =====
+git checkout main
+
+# ===== 合併分支 (在 main 上合併 new-feature) =====
+git merge new-feature
+git push
+
 
 # Git 指令大全
 
