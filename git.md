@@ -1,5 +1,7 @@
-工作流程
-# ===== 第一次在新專案資料夾初始化並推到 GitHub =====
+## GitHub 工作流程
+
+```bash
+# ===== 第一次建立專案並推送到 GitHub =====
 git init
 git add .
 git commit -m "init commit"
@@ -7,12 +9,12 @@ git branch -M main
 git remote add origin https://github.com/你的帳號/專案名稱.git
 git push -u origin main
 
-# ===== 之後在同一台電腦更新推送 =====
+# ===== 之後在同一台電腦更新 =====
 git add .
 git commit -m "update"
 git push
 
-# ===== 換到其他電腦繼續開發 =====
+# ===== 在其他電腦繼續開發 =====
 git clone https://github.com/你的帳號/專案名稱.git
 cd 專案名稱
 git add .
